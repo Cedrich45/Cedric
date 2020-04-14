@@ -1,0 +1,226 @@
+package application;
+import javafx.application.Application;
+import javafx.stage.Stage;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.geometry.Insets;
+import javafx.scene.control.RadioButton;
+import javafx.scene.control.ToggleGroup;
+import javafx.scene.layout.*; 
+import javafx.scene.text.*;
+public abstract class Java extends Application{
+public static void main(String[] args) {
+	
+}
+ Button btn;
+ Button btn1;
+ Button btn2;
+ Button btn3;
+
+ Stage window;
+ //declare variables
+
+@Override				
+public void start(Stage primaryStage) throws Exception{
+	
+	primaryStage.setTitle("Workout Result");
+	//sets the title for the stage
+	btn = new Button();
+	 btn.setText("Days workout in a week: 0-3");
+	btn1 = new Button();
+	 btn1.setText("Days workout in a week: 4-7");
+	 btn2 = new Button();
+	 btn2.setText("Back");
+	 btn3 = new Button();
+	 btn3.setText("Back");
+	 
+	Label IntroMain1= new Label("Answer these questions to determine how much you workout. 1 = Never 2 = Sometimes 3 = Always");
+	IntroMain1.setPadding(new Insets(30,1,30,20));
+	Label IntroMain2= new Label("Answer these questions to determine what kind of workouts you tend to do. 1 = Never 2 = Sometimes 3 = Always");
+	IntroMain2.setPadding(new Insets(30,1,30,20));
+	
+	Text Intro1= new Text("Survey for Training");
+	Label A = new Label("Do you change your workout routine everyday?");		
+	Label B = new Label("Do you workout on the weekends as well?");
+	Label C = new Label("Do you lift with a friend or partner?");
+	Label D = new Label ("Do you strive to better your body?");
+	Label E = new Label ("Does this cause you to feel better about yourself?");
+	//Questions/Labels for how much you workout and what you tend to do
+	Text Intro2= new Text("Workouts that you do");
+	Label F = new Label("Do you do leg workouts?");
+	Label G = new Label("Do you do bicep workouts?");
+	Label H = new Label("Do you run daily?");
+	Label I = new Label("Do you do chest workouts");
+	Label J = new Label("Do you do abdominal workouts?");
+	//creating the labels which kind of workouts you like to do
+	
+	//Questions/Labels for Workouts
+	RadioButton radio1 = new RadioButton();
+	radio1.setText("1");
+	radio1.setPadding(new Insets(1,1,1,1));
+	RadioButton radio2 = new RadioButton();
+	radio2.setText("2");
+	radio2.setPadding(new Insets(1,1,1,1));
+	RadioButton radio3 = new RadioButton();
+	radio3.setText("3");
+	radio3.setPadding(new Insets(1,1,1,1));
+	RadioButton radio4 = new RadioButton();
+	radio4.setText("1");
+	radio4.setPadding(new Insets(1,1,1,1));
+	RadioButton radio5 = new RadioButton();
+	radio5.setText("2");
+	radio5.setPadding(new Insets(1,1,1,1));
+	RadioButton radio6 = new RadioButton();
+	radio6.setText("3");
+	radio6.setPadding(new Insets(1,1,1,1));
+	RadioButton radio7 = new RadioButton();
+	radio7.setText("1");
+	radio7.setPadding(new Insets(1,1,1,1));
+	RadioButton radio8 = new RadioButton();
+	radio8.setText("2");
+	radio8.setPadding(new Insets(1,1,1,1));
+	RadioButton radio9 = new RadioButton();
+	radio9.setText("3");
+	radio9.setPadding(new Insets(1,1,1,1));
+	RadioButton radio10 = new RadioButton();
+	radio10.setText("1");
+	radio10.setPadding(new Insets(1,1,1,1));
+	RadioButton radio11 = new RadioButton();
+	radio11.setText("2");
+	radio11.setPadding(new Insets(1,1,1,1));
+	RadioButton radio12 = new RadioButton();
+	radio12.setText("3");
+	radio12.setPadding(new Insets(1,1,1,1));
+	RadioButton radio13 = new RadioButton();
+	radio13.setText("1");
+	radio13.setPadding(new Insets(1,1,1,1));
+	RadioButton radio14 = new RadioButton();
+	radio14.setText("2");
+	radio14.setPadding(new Insets(1,1,1,1));
+	RadioButton radio15 = new RadioButton();
+	radio15.setText("3");
+	radio15.setPadding(new Insets(1,1,30,1));
+	RadioButton radio16 = new RadioButton();
+	radio16.setText("1");
+	radio16.setPadding(new Insets(1,1,1,1));
+	RadioButton radio17 = new RadioButton();
+	radio17.setText("2");
+	radio17.setPadding(new Insets(1,1,1,1));
+	RadioButton radio18 = new RadioButton();
+	radio18.setText("3");
+	radio18.setPadding(new Insets(1,1,1,1));
+	RadioButton radio19 = new RadioButton();
+	radio19.setText("1");
+	radio19.setPadding(new Insets(1,1,1,1));
+	RadioButton radio20 = new RadioButton();
+	radio20.setText("2");
+	radio20.setPadding(new Insets(1,1,1,1));
+	RadioButton radio21 = new RadioButton();
+	radio21.setText("3");
+	radio21.setPadding(new Insets(1,1,1,1));
+	RadioButton radio22 = new RadioButton();
+	radio22.setText("1");
+	radio22.setPadding(new Insets(1,1,1,1));
+	RadioButton radio23 = new RadioButton();
+	radio23.setText("2");
+	radio23.setPadding(new Insets(1,1,1,1));
+	RadioButton radio24 = new RadioButton();
+	radio24.setText("3");
+	radio24.setPadding(new Insets(1,1,1,1));
+	RadioButton radio25 = new RadioButton();
+	radio25.setText("1");
+	radio25.setPadding(new Insets(1,1,1,1));
+	RadioButton radio26 = new RadioButton();
+	radio26.setText("2");
+	radio26.setPadding(new Insets(1,1,1,1));
+	RadioButton radio27= new RadioButton();
+	radio27.setText("3");
+	radio27.setPadding(new Insets(1,1,1,1));
+	RadioButton radio28 = new RadioButton();
+	radio28.setText("1");
+	radio28.setPadding(new Insets(1,1,1,1));
+	RadioButton radio29 = new RadioButton();
+	radio29.setText("2");
+	radio29.setPadding(new Insets(1,1,1,1));
+	RadioButton radio30 = new RadioButton();
+	radio30.setText("3");
+	radio30.setPadding(new Insets(1,1,30,1));
+	//creates the radio buttons, padding (formats the buttons), set text adds text next to it
+	
+	ToggleGroup myToggleGroup = new ToggleGroup();
+	ToggleGroup myToggleGroup1 = new ToggleGroup();
+	ToggleGroup myToggleGroup2 = new ToggleGroup();
+	ToggleGroup myToggleGroup3 = new ToggleGroup();
+	ToggleGroup myToggleGroup4 = new ToggleGroup();
+	ToggleGroup myToggleGroup5 = new ToggleGroup();
+	ToggleGroup myToggleGroup6 = new ToggleGroup();
+	ToggleGroup myToggleGroup7 = new ToggleGroup();
+	ToggleGroup myToggleGroup8 = new ToggleGroup();
+	ToggleGroup myToggleGroup9 = new ToggleGroup();
+	//creates toggle group method
+	
+	radio1.setToggleGroup(myToggleGroup);
+	radio2.setToggleGroup(myToggleGroup);
+	radio3.setToggleGroup(myToggleGroup);
+	radio4.setToggleGroup(myToggleGroup1);
+	radio5.setToggleGroup(myToggleGroup1);
+	radio6.setToggleGroup(myToggleGroup1);
+	radio7.setToggleGroup(myToggleGroup2);
+	radio8.setToggleGroup(myToggleGroup2);
+	radio9.setToggleGroup(myToggleGroup2);
+	radio10.setToggleGroup(myToggleGroup3);
+	radio11.setToggleGroup(myToggleGroup3);
+	radio12.setToggleGroup(myToggleGroup3);
+	radio13.setToggleGroup(myToggleGroup4);
+	radio14.setToggleGroup(myToggleGroup4);
+	radio15.setToggleGroup(myToggleGroup4);
+	radio16.setToggleGroup(myToggleGroup5);
+	radio17.setToggleGroup(myToggleGroup5);
+	radio18.setToggleGroup(myToggleGroup5);
+	radio19.setToggleGroup(myToggleGroup6);
+	radio20.setToggleGroup(myToggleGroup6);
+	radio21.setToggleGroup(myToggleGroup6);
+	radio22.setToggleGroup(myToggleGroup7);
+	radio23.setToggleGroup(myToggleGroup7);
+	radio24.setToggleGroup(myToggleGroup7);
+	radio25.setToggleGroup(myToggleGroup8);
+	radio26.setToggleGroup(myToggleGroup8);
+	radio27.setToggleGroup(myToggleGroup8);
+	radio28.setToggleGroup(myToggleGroup9);
+	radio29.setToggleGroup(myToggleGroup9);
+	radio30.setToggleGroup(myToggleGroup9);
+	//assigns method togglegroup to the radiobuttons
+
+	HBox layout1 = new HBox();
+	VBox layout2 = new VBox();
+	VBox layout3 = new VBox();
+	//creates the structure of the scene
+	
+	
+	layout1.getWorkout().addAll(btn,btn1);
+	layout1.setPadding(new Insets (80,1,1,25));
+	//Button Layout
+	layout2.getWorkout().addAll(IntroMain1,Intro1, A,radio1,radio2,radio3,B,radio4,radio5,radio6,C,radio7,radio8,radio9,D,radio10,radio11,radio12,E, radio13,radio14,radio15,btn2);
+	//Survey for Training
+	layout3.getWorkout().addAll(IntroMain2,Intro2, F, radio16, radio17, radio18, G, radio19,radio20,radio21, H,radio22,radio23,radio24,I,radio25,radio26,radio27,J, radio28,radio29,radio30,btn3);
+	//Workouts you do
+	Scene scene1 = new Scene(layout1,200,200);
+	Scene scene2 = new Scene(layout2,500,600);
+	Scene scene3 = new Scene(layout3,500,600);
+	//formats scene
+	 window = primaryStage;
+	 this.btn.setOnAction(e-> window.setScene(scene2));
+	 this.btn1.setOnAction(e->window.setScene(scene3));
+	 this.btn2.setOnAction(e->window.setScene(scene1));
+	 this.btn3.setOnAction(e->window.setScene(scene1));
+	 //this is where the buttons for back are used for display
+	 primaryStage.setScene(scene1);
+	primaryStage.show();
+	//initializes the scene and shows it
+	
+	
+}
+String response1= ("If you scored below than 10: You want to get more active fast!");
+//variable used in subclass main
+}
