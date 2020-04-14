@@ -1,0 +1,91 @@
+package application;
+
+import java.util.Scanner;
+public class Main extends Java implements Finish{
+	 String help;
+	 public String gethelp() {
+	 	return help;
+	 }
+
+	 public void setName(String help) {
+	 	this.help=help;
+	 }
+	 //this statement shows the exact variable we are using
+	 
+	 
+	 
+	 
+	
+	static int count =5;
+	static void counts() {
+		count--;
+		if(count>=1) {
+			
+			System.out.println(count);
+			counts();
+		}	
+	}
+	//recursion, makes a countdown start as soon as javafx program begins
+	
+public void printresults() {
+	System.out.println(super.response1);
+	//super specifies where we are getting response1 from... the super class which is Java
+}
+
+	public static void main(String[] args) {
+		Main r = new Main();
+		r.setName("If you scored higher than 10 you are on the right path to have a fit body!");
+		
+		
+		
+		char names = 'A';
+		String a,b;
+		a = "1";
+		
+		a = "10";
+		
+		switch(names) {
+		case'A' :
+			b = (a=="10") ? "Cedric Henderson": "Darius Barnes";
+			System.out.print("Project Done by: \n" +b+ " and ");
+			b = (a=="1") ? "Cedric Henderson" : "Darius Barnes";          
+			System.out.println(b);
+			break;
+			//switch statement that prints our names when the number value is equal to the predetermined value
+		}
+		
+		System.out.println(date.toString());
+		Scanner input = new Scanner(System.in);
+		System.out.println("\n Hello! Welcome to your own workout regime. \n Answer a few questions below so we can begin your session.\n Once you have finished this survey you will be directed to where you can get more advanced workouts if wanted.\n Once finished with the workout regime you will be directed back here for your results!");
+		System.out.println("What is your name: ");
+		final String name = input.next();
+		System.out.println("How old are you " + name + "?");
+		final int age = input.nextInt();
+		//simple scanners and print statements, stored in their variables. As well as calling the date variable from the implemented abstract interface, Finish.
+
+		System.out.println("How often do you workout " + name + "? (1-7)"); 
+		int week = input.nextInt();
+		int scale = (int)Math.pow(1, 1); 
+		week= Math.round(week*scale)/scale;
+		
+		if (week > 1.0 || week < 7.0)
+		{
+			while (week>7.0|| week < 1.0)
+			{
+				System.out.println("Please enter a year between 1-7 :");
+				 week = input.nextInt();
+			}
+			//ensures that user inputs a number between 1-7
+		
+			System.out.println("Your session will begin in: ");
+			counts();
+			}
+		Main ok=new Main();
+		ok.printresults();
+		System.out.println(r.gethelp());
+			//prints the get help method
+		launch(args);
+		//launches code in java class
+	}
+	
+}
