@@ -198,12 +198,12 @@ public void start(Stage primaryStage) throws Exception{
 	//creates the structure of the scene
 	
 	
-	layout1.getWorkout().addAll(btn,btn1);
+	layout1.getChildren().addAll(btn,btn1);
 	layout1.setPadding(new Insets (80,1,1,25));
 	//Button Layout
-	layout2.getWorkout().addAll(IntroMain1,Intro1, A,radio1,radio2,radio3,B,radio4,radio5,radio6,C,radio7,radio8,radio9,D,radio10,radio11,radio12,E, radio13,radio14,radio15,btn2);
+	layout2.getChildren().addAll(IntroMain1,Intro1, A,radio1,radio2,radio3,B,radio4,radio5,radio6,C,radio7,radio8,radio9,D,radio10,radio11,radio12,E, radio13,radio14,radio15,btn2);
 	//Survey for Training
-	layout3.getWorkout().addAll(IntroMain2,Intro2, F, radio16, radio17, radio18, G, radio19,radio20,radio21, H,radio22,radio23,radio24,I,radio25,radio26,radio27,J, radio28,radio29,radio30,btn3);
+	layout3.getChildren().addAll(IntroMain2,Intro2, F, radio16, radio17, radio18, G, radio19,radio20,radio21, H,radio22,radio23,radio24,I,radio25,radio26,radio27,J, radio28,radio29,radio30,btn3);
 	//Workouts you do
 	Scene scene1 = new Scene(layout1,200,200);
 	Scene scene2 = new Scene(layout2,500,600);
